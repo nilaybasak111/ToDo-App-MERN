@@ -33,7 +33,7 @@ function Login() {
           },
         }
       );
-      console.log("Login response ", response.data)
+      //console.log("Login response ", response.data)
       const token = response.data?.user?.token || response.data?.token;
       
       if (token) {
