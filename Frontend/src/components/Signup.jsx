@@ -36,7 +36,8 @@ function Signup() {
         }
       );
       toast.success(response.data.msg || "Register Successfully")
-      localStorage.setItem("jwt", data.token)
+      console.log("signup response ", response.data)
+      localStorage.setItem("jwt", response.data.token)
       navigateTo("/login");
       SetUsername("");
       SetEmail("");

@@ -33,11 +33,24 @@ function Login() {
           },
         }
       );
-      localStorage.setItem("jwt", response.data.user.token)
-      navigateTo("/");
-      toast.success(response.data.msg || "Loggedin Successfully");
-      SetEmail("");
-      SetPassword("");
+      console.log("Login response ", response.data)
+      const token = response.data?.user?.token || response.data?.token;
+      
+      if (token) {
+        localStorage.setItem("jwt", token);
+        navigateTo("/");
+        window.location.href = "/";
+        toast.success(response.data.msg || "Logged in Successfully");
+        SetEmail("");
+        SetPassword("");
+      } else {
+        throw new Error("Token not received");
+      }
+      // localStorage.setItem("jwt", response.data.user.token)
+      // navigateTo("/");
+      // toast.success(response.data.msg || "Loggedin Successfully");
+      // SetEmail("");
+      // SetPassword("");
       
     } catch (error) {
       console.log("Error in handleLogin ", error.response);
