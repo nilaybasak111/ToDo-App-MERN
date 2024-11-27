@@ -38,6 +38,22 @@ We are using a middleware named "**authMiddleware**". With the help of this midd
 ```bash
   git clone https://github.com/nilaybasak111/ToDo-App-MERN.git
 ```
+- Then Install all node modules
+```bash
+  npm install
+```
+- Then run this command to create a dist folder
+```bash
+  npm run build
+``` 
+- Then start the project using this command
+```bash
+  npm run dev
+```
+Or
+```bash
+  npm run start
+```
 
 #### For More Information Please Visit the Code and The Image of the ToDo App MERN Workflow.png
 
