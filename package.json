@@ -10,7 +10,7 @@
   },
   "author": "Nilay Basak",
   "license": "ISC",
-  "description": "Online ToDo App to Manage Your Work",
+  "description": "This is a ToDo app/website. In this app/website, the user can create an account and add a ToDo, delete a ToDo, and mark a ToDo as completed/incompleted.",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
