@@ -42,6 +42,7 @@ We are using a middleware named "**authMiddleware**". With the help of this midd
 ```bash
   npm install
 ```
+- Rename the .env.example file to .env. And add MongoDB url and Jwt Secret Key in .env file.
 - Then run this command to create a dist folder
 ```bash
   npm run build
